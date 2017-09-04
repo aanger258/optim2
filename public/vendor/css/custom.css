@@ -1,0 +1,34 @@
+div.required .control-label:not(span):before, td.required:before{
+    content: '* ';
+    color: #F00;
+    font-weight: bold;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',sans-serif;
+    color: #545454;
+    text-rendering: optimizeLegibility;
+}
+.control-label{
+    text-align: right;
+    margin-bottom: 0;
+    padding-top: 9px;
+}
+.form-group {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+.message-success{
+    margin-bottom:20px !important;
+}
+.table a.asc:after {
+    content: " \f106";
+    font-family: FontAwesome;
+}
+.table a.desc:after {
+    content: " \f107";
+    font-family: FontAwesome;
+}
