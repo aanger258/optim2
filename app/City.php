@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class City extends Model
 {
     public $timestamps = false;
-    protected $table = 'citiesaaaa';
+    protected $table = 'cities';
 
 
     public function getRegion(){
