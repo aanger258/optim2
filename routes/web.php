@@ -30,6 +30,12 @@ Route::group(['prefix' => 'admin',  'middleware' => 'admin'], function () {
 	    Route::get('/accounts/{id}/edit','AccountManagerController@edit')->name('Manager de conturi');
 	    Route::put('/accounts/{id}','AccountManagerController@update')->name('Manager de conturi');
 	    Route::delete('/accounts/{id}','AccountManagerController@destroy')->name('Manager de conturi');
+
+	    Route::get('/zone', 'SelectController@index')->name('Zone');
+
+		Route::post('/insert', 'InsertController@insert')->name('Zone');
+
+		Route::post('/update-zone', 'UpdateController@update')->name('Zone');
 });
 
 #General access

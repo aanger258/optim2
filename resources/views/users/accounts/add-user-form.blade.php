@@ -14,7 +14,7 @@
                             <i class="fa fa-arrow-up"></i>
                         </div>
                     </a>
-                    <h2 class="font-light m-b-xs">Users</h2>
+                    <h2 class="font-light m-b-xs">Utilizatori</h2>
                 </div> <!-- .panel-body -->
             </div> <!-- .hpanel -->
         </div> <!-- .normalheader -->

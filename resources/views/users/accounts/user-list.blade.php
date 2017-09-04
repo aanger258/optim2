@@ -45,12 +45,12 @@
                             <thead>
                             <tr>
                                 <th width="10">#</th>
-                                <th>Username</th>
+                                <th>Nume de utilizator</th>
                                 <th>Mail</th>
                                 <th>Telefon</th>
-                                <th>Group</th>
+                                <th>Grup</th>
                                 <th>Status</th>
-                                <th width="50">Action</th>
+                                <th width="50">Actiune</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -65,11 +65,11 @@
                                     <td>{{ $user->groupName->group_name }}</td>
                                     @if($user->status == 1)
                                     <td>
-                                        <span class="label label-success">Enabled</span>
+                                        <span class="label label-success">Activ</span>
                                     </td>
                                     @else
                                     <td>
-                                        <span class="label label-danger">Disabled</span>
+                                        <span class="label label-danger">Inactiv</span>
                                     </td>
                                     @endif
                                     <td class="text-center"><a href="{{ URL::to('/admin/accounts/'.$user->id.'/edit')}}" class="btn btn-info"><i class="fa fa-edit"></i></a></td>
@@ -80,7 +80,7 @@
                         </table>
                     @else
                         
-                        There are no users that you can manage.
+                        Nu exista utilizatori in baza de date.
 
                     @endif
                     </div>

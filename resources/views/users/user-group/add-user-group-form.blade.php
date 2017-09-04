@@ -13,7 +13,7 @@
                             <i class="fa fa-arrow-up"></i>
                         </div>
                     </a>
-                    <h2 class="font-light m-b-xs">User Groups</h2>
+                    <h2 class="font-light m-b-xs">Grupuri de utilizatori</h2>
                 </div> <!-- .panel-body -->
             </div> <!-- .hpanel -->
         </div> <!-- .normalheader -->
@@ -61,22 +61,22 @@
                                             <br />
                                             <br />
 
-                                            <button type="button" class="btn" id="refresh permissions" onclick="refreshPermissions()">Refresh permissions</button>
+                                            <button type="button" class="btn" id="refresh permissions" onclick="refreshPermissions()">Actualizeaza permisiuni</button>
 
                                         </div>  
 
                                         <div class="form-group">
                                             <label for="sort-order">Status:</label>
                                             <select name="status" id="status" class="form-control">
-                                                <option value="{{ old('status') }}" >Choose</option>
-                                                <option value="1" {{ (old("status") == 1 ? "selected" : "") }} >Enabled</option>
-                                                <option value="0" {{ (old('status') !== null && old("status") == 0 ? "selected" : "") }} >Disabled</option>
+                                                <option value="{{ old('status') }}" >Alege</option>
+                                                <option value="1" {{ (old("status") == 1 ? "selected" : "") }} >Activ</option>
+                                                <option value="0" {{ (old('status') !== null && old("status") == 0 ? "selected" : "") }} >Inactiv</option>
                                             </select>
                                         </div>
 
                                         {{ csrf_field() }}
 
-                                        <button type="submit" class="btn btn-success">Add User Group</button>
+                                        <button type="submit" class="btn btn-success">Salveaza modificarile</button>
                                     </form>
                                 </div>
                             </div>

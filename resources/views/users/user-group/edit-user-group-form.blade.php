@@ -13,7 +13,7 @@
                             <i class="fa fa-arrow-up"></i>
                         </div>
                     </a>
-                    <h2 class="font-light m-b-xs">User Groups</h2>
+                    <h2 class="font-light m-b-xs">Grupuri de utilizatori</h2>
                 </div> <!-- .panel-body -->
             </div> <!-- .hpanel -->
         </div> <!-- .normalheader -->
@@ -40,12 +40,12 @@
                                     <form action="{{ URL::to('/admin/user-groups/'.$group->id) }}" method="POST">
 
                                         <div class="form-group">
-                                            <label for="name">Group Name:</label>
+                                            <label for="name">Nume de grup:</label>
                                             <input type="text" name="group_name" id="group_name" class="form-control" value="{{ $group->group_name or '' }}" required>
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="group">Group Permissions:</label>
+                                            <label for="group">Permisiuni de grup:</label>
                                             <div class="pre-scrollable" id="access">
 
                                             @if(isset($roles) && count($roles) > 0)
@@ -61,16 +61,16 @@
                                             <br />
                                             <br />
 
-                                            <button type="button" class="btn" id="refresh permissions" onclick="refreshPermissions()">Refresh permissions</button>
+                                            <button type="button" class="btn" id="refresh permissions" onclick="refreshPermissions()">Actualizeaza permisiuni</button>
 
                                         </div>
 
                                         <div class="form-group">
                                             <label for="sort-order">Status:</label>
                                             <select name="status" id="status" class="form-control">
-                                                <option value="">Choose</option>
-                                                <option value="1" @if($group->status == 1) selected @endif >Enabled</option>
-                                                <option value="0" @if($group->status == 0) selected @endif>Disabled</option>
+                                                <option value="">Alege</option>
+                                                <option value="1" @if($group->status == 1) selected @endif >Activ</option>
+                                                <option value="0" @if($group->status == 0) selected @endif>Inactiv</option>
                                             </select>
                                         </div>
 
@@ -78,7 +78,7 @@
                                         {{ method_field('PUT') }}
                                         {{ csrf_field() }}
 
-                                        <button type="submit" class="btn btn-success">Edit User Group</button>
+                                        <button type="submit" class="btn btn-success">Salveaza modificarile</button>
                                     </form>
                                 </div>
                             </div>

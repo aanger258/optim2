@@ -12,6 +12,9 @@
                     <li><a href="{{ URL::to('/admin/accounts') }}">Manager de conturi</a></li>
                 </ul>
             </li>
+            <li>
+                <li><a href="{{ URL::to('/admin/zone') }}">Zone</a></li>
+            </li>
         </ul>
     </div>
 </aside>
